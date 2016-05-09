@@ -23,3 +23,15 @@ $local_settings = __DIR__ . "/settings.local.php";
 if (file_exists($local_settings)) {
   include $local_settings;
 }
+$databases['default']['default'] = array (
+  'database' => 'abbies_tunes',
+  'username' => 'abby',
+  'password' => 'password',
+  'prefix' => '',
+  'host' => '127.0.0.1',
+  'port' => '8889',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$settings['hash_salt'] = 'DhlbNLM3v1VyWFHQpA8hh09vv1YJblfoORCia2o7ehzpg8IeIFVQnVSjfz680Eu9eJDcHjMrRg';
+$settings['install_profile'] = 'standard';

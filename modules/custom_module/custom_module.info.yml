@@ -1,0 +1,6 @@
+name: Custom Module
+description: Custom Drupal 8 Module
+package: Custom
+type: module
+version: 1.0
+core: 8.x
