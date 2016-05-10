@@ -1,20 +1,20 @@
 <?php
-function custom_module_menu() {
-    print_r("Works");
-    $items = array();
-    $items['welcome_user'] = array(
-        'title' => "Welcome, New User!",
-        'page callback' => 'account_success',
-        'access callback' => TRUE,
-        'type' => MENU_CALLBACK,
-    );
-    return $items;
-}
-function account_success() {
-    return '<h3>Welcome, New User! Account successfully created!</h3>';
-}
+// function custom_module_menu() {
+//     print_r("Works");
+//     $items = array();
+//     $items['welcome_user'] = array(
+//         'title' => "Welcome, New User!",
+//         'page callback' => 'account_success',
+//         'access callback' => TRUE,
+//         'type' => MENU_CALLBACK,
+//     );
+//     return $items;
+// }
+// function account_success() {
+//     return '<h3>Welcome, New User! Account successfully created!</h3>';
+// }
 
 function custom_module_user_login() {
-    print_r("Works");
-    $_GET['destination'] = 'welcome_user';
+
+      return new \Symfony\Component\HttpFoundation\RedirectResponse(\Drupal::url('<front>'));
 }

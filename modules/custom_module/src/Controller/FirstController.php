@@ -1,7 +1,7 @@
 <?php
 /**
-@file
-Contains \Drupal\custom_module\Controller\FirstController.
+*@file
+*Contains \Drupal\custom_module\Controller\FirstController.
  */
 
 namespace Drupal\custom_module\Controller;
